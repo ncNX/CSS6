@@ -1,0 +1,36 @@
+:root {
+  --bg-color: gray;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+}
+
+.block__square {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-color);
+}
+.block__square--red {
+  background-color: red;
+}
+.block__square--green {
+  background-color: green;
+}
+.block__square--blue {
+  background-color: blue;
+}
+.block__input {
+  display: none;
+}
+.block__input:checked ~ .block__square {
+  opacity: 50%;
+}/*# sourceMappingURL=styles.css.map */

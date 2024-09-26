@@ -1,0 +1,22 @@
+:root {
+	--bg-color: gray;
+}
+
+@mixin square($h: 150px, $w: 150px) {
+	font-size: 24px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	height: $h;
+	width: $w;
+	cursor: pointer;
+}
+
+@mixin squareColor($bgColor) {
+	background-color: $bgColor;
+}
+
+@mixin centreElement {
+	display: grid;
+	place-items: center;
+}

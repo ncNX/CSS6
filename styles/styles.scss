@@ -1,0 +1,38 @@
+@import 'mixin.scss';
+
+
+.container {
+	display: flex;
+	gap: 32px;
+}
+
+.block {
+	&__square {
+
+		@include square(50px, 100px);
+		@include centreElement();
+
+
+		background-color: var(--bg-color);
+
+		&--red {
+			@include squareColor(red);
+		}
+
+		&--green {
+			background-color: (green);
+		}
+
+		&--blue {
+			background-color: (blue);
+		}
+	}
+
+	&__input {
+		&:checked ~.block__square {
+			opacity: 50%;
+		}
+
+		display: none;
+	}
+}
